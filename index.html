@@ -1,0 +1,148 @@
+<html>
+<head>
+
+</head>
+<title>Currency Converter</title>
+<body>
+<h1 align="center">Currency Converter</h1>
+<br><br>
+<form name="myForm"  method="POST"
+     action="CurConvert.do" >
+     <p align="center">
+     From:
+     <select name="from" size="1">
+          <option value="EUR" selected="selected"> EUR,Euro </option>
+          <option value="USD"> USD,US </option>
+          <option value="GBP"> GBP,British </option>
+          <option value="AUD"> AUD,Australian </option>
+          <option value="JPY"> JPY,Japanese </option>
+          <option value="AED"> AED,United </option>
+          <option value="ARS"> ARS,Argentine </option>
+          <option value="BGN"> BGN,Bulgarian </option>
+          <option value="BND"> BND,Brunei </option>
+          <option value="BOB"> BOB,Bolivian </option>
+          <option value="BRL"> BRL,Brazilian </option>
+          <option value="CAD"> CAD,Canadian </option>
+          <option value="CHF"> CHF,Swiss </option>
+          <option value="CLP"> CLP,Chilean </option>
+          <option value="CNY"> CNY,Chinese </option>
+          <option value="COP"> COP,Colombian </option>
+          <option value="CZK"> CZK,Czech </option>
+          <option value="DKK"> DKK,Danish </option>
+          <option value="EGP"> EGP,Egyptian </option>
+          <option value="FJD"> FJD,Fijian </option>
+          <option value="HKD"> HKD,Hong </option>
+          <option value="HRK"> HRK,Croatian </option>
+          <option value="HUF"> HUF,Hungarian </option>
+          <option value="IDR"> IDR,Indonesian </option>
+          <option value="ILS"> ILS,Israeli </option>
+          <option value="INR"> INR,Indian </option>
+          <option value="KES"> KES,Kenyan </option>
+          <option value="KRW"> KRW,South </option>
+          <option value="LTL"> LTL,Lithuanian </option>
+          <option value="MAD"> MAD,Moroccan </option>
+          <option value="MXN"> MXN,Mexican </option>
+          <option value="MYR"> MYR,Malaysian </option>
+          <option value="NOK"> NOK,Norwegian </option>
+          <option value="NZD"> NZD,New </option>
+          <option value="PEN"> PEN,Peruvian </option>
+          <option value="PHP"> PHP,Philippine </option>
+          <option value="PKR"> PKR,Pakistani </option>
+          <option value="PLN"> PLN,Polish </option>
+          <option value="RON"> RON,Romanian </option>
+          <option value="RSD"> RSD,Serbian </option>
+          <option value="RUB"> RUB,Russian </option>
+          <option value="SAR"> SAR,Saudi </option>
+          <option value="SEK"> SEK,Swedish </option>
+          <option value="SGD"> SGD,Singapore </option>
+          <option value="THB"> THB,Thai </option>
+          <option value="TRY"> TRY,Turkish </option>
+          <option value="TWD"> TWD,New </option>
+          <option value="UAH"> UAH,Ukrainian </option>
+          <option value="VEF"> VEF,Venezuelan </option>
+          <option value="VND"> VND,Vietnamese </option>
+          <option value="ZAR"> ZAR,South </option>
+
+    </select>
+     To:
+     <select name="to" size="1">
+          <option value="EUR"> EUR,Euro </option>
+          <option value="USD" selected="selected"> USD,US </option>
+          <option value="GBP"> GBP,British </option>
+          <option value="AUD"> AUD,Australian </option>
+          <option value="JPY"> JPY,Japanese </option>
+          <option value="AED"> AED,United </option>
+          <option value="ARS"> ARS,Argentine </option>
+          <option value="BGN"> BGN,Bulgarian </option>
+          <option value="BND"> BND,Brunei </option>
+          <option value="BOB"> BOB,Bolivian </option>
+          <option value="BRL"> BRL,Brazilian </option>
+          <option value="CAD"> CAD,Canadian </option>
+          <option value="CHF"> CHF,Swiss </option>
+          <option value="CLP"> CLP,Chilean </option>
+          <option value="CNY"> CNY,Chinese </option>
+          <option value="COP"> COP,Colombian </option>
+          <option value="CZK"> CZK,Czech </option>
+          <option value="DKK"> DKK,Danish </option>
+          <option value="EGP"> EGP,Egyptian </option>
+          <option value="FJD"> FJD,Fijian </option>
+          <option value="HKD"> HKD,Hong </option>
+          <option value="HRK"> HRK,Croatian </option>
+          <option value="HUF"> HUF,Hungarian </option>
+          <option value="IDR"> IDR,Indonesian </option>
+          <option value="ILS"> ILS,Israeli </option>
+          <option value="INR"> INR,Indian </option>
+          <option value="KES"> KES,Kenyan </option>
+          <option value="KRW"> KRW,South </option>
+          <option value="LTL"> LTL,Lithuanian </option>
+          <option value="MAD"> MAD,Moroccan </option>
+          <option value="MXN"> MXN,Mexican </option>
+          <option value="MYR"> MYR,Malaysian </option>
+          <option value="NOK"> NOK,Norwegian </option>
+          <option value="NZD"> NZD,New </option>
+          <option value="PEN"> PEN,Peruvian </option>
+          <option value="PHP"> PHP,Philippine </option>
+          <option value="PKR"> PKR,Pakistani </option>
+          <option value="PLN"> PLN,Polish </option>
+          <option value="RON"> RON,Romanian </option>
+          <option value="RSD"> RSD,Serbian </option>
+          <option value="RUB"> RUB,Russian </option>
+          <option value="SAR"> SAR,Saudi </option>
+          <option value="SEK"> SEK,Swedish </option>
+          <option value="SGD"> SGD,Singapore </option>
+          <option value="THB"> THB,Thai </option>
+          <option value="TRY"> TRY,Turkish </option>
+          <option value="TWD"> TWD,New </option>
+          <option value="UAH"> UAH,Ukrainian </option>
+          <option value="VEF"> VEF,Venezuelan </option>
+          <option value="VND"> VND,Vietnamese </option>
+          <option value="ZAR"> ZAR,South </option>
+    </select>
+    <br>
+
+
+
+    <center>
+    <br>
+	Amount: <input type="text" name="amount" />
+	<input type="submit" name="adds"value="?"title="Get info" />
+
+	<input type="submit" name="adds"value="!"title="Download the code" />
+
+
+	<br><br><br>
+	<input type="submit" name="adds"value="Convert" />
+     </center>
+</form></body></html>
+
+
+
+
+
+
+
+
+
+
+
+
