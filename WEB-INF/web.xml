@@ -1,0 +1,33 @@
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+    version="2.4">
+
+<servlet>
+   <servlet-name>Currencies</servlet-name>
+   <servlet-class>com.example.web.CurConv</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>Currencies</servlet-name>
+   <url-pattern>/CurConvert.do</url-pattern>
+</servlet-mapping>
+
+
+<context-param>
+<param-name>infurl</param-name>
+<param-value>http://irkarami.wordpress.com/2011/11/19/2%CE%B7-%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1/</param-value>
+</context-param>
+
+<context-param>
+<param-name>downurl</param-name>
+<param-value>https://github.com/irkarami1/Currency-Converter</param-value>
+</context-param>
+
+<listener>
+<listener-class>MyListener</listener-class>
+</listener>
+
+
+
+</web-app>
